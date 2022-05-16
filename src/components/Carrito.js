@@ -20,6 +20,11 @@ export const Carrito = () => {
 			setCarrito([...carrito])
 		})
 	}
+	const pago_confirmado = () =>{
+		alert("Pago Confirmado");
+		setCarrito([]);
+		tooglefalse()
+	}
 	const increase = id =>{
 		carrito.forEach(item =>{
 			if(item.id === id){
@@ -61,7 +66,7 @@ export const Carrito = () => {
 					{
 					carrito.map((producto) => (
             <div className="carrito__item" key={producto.id}>
-              <img src={producto.image} alt={producto.title} />
+              <img src={producto.image.default} alt={producto.title} />
               <div>
                 <h3> {producto.title} </h3>
                 <p className="price">${producto.price}</p>
@@ -92,7 +97,7 @@ export const Carrito = () => {
 					}
         </div>
 
-        <div className="carrito__footer">
+        <div className="carrito__footer" onClick={()=>pago_confirmado()}>
           <h3>Total: ${total}</h3>
           <button className="btn">Payment</button>
         </div>

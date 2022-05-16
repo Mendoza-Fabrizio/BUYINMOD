@@ -14,7 +14,7 @@ export const ProductoItem = ({title, image, category, price, id}) => {
     <div key={id} className="producto">
       <Link to={`/producto/${id}`}>
       <div className="producto__img">
-        <img src={image} alt={title} />
+        <img src={image.default} alt={title} />
       </div>
       </Link>
       <div className="producto__footer">

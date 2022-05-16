@@ -3,8 +3,8 @@ const data = {
   items: [
     {
       id: 1,
-      title: "Nike LD Waffle Sacai Black Nylon",
-      price: 401,
+      title: "Amoxicilina",
+      price: 10,
       image: require('./images/img01.jpg'),
       category: "nike",
       img1: "https://stockx-360.imgix.net/Nike-LD-Waffle-Sacai-Black-Nylon/Images/Nike-LD-Waffle-Sacai-Black-Nylon/Lv2/img",
